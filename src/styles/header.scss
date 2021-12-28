@@ -1,0 +1,12 @@
+@use '@styles/global';
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0px;
+}
+
+.header-logo {
+    height: 50px;
+    width: 250px;
+}

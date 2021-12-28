@@ -1,0 +1,28 @@
+@use '@styles/global';
+
+$title-font-size-mobile: 26px;
+$paragraph-font-size-mobile: 16px;
+
+.item {
+    width: 90%;
+}
+.item-image {
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+.item-title {
+    font-size: $title-font-size-mobile;
+}
+.item-paragraph {
+    font-size: $paragraph-font-size-mobile;
+}
+
+@media (min-width: 700px) {
+
+	.item {
+        width: 200px;
+        margin: 0px 20px 20px 20px;
+    }
+
+}

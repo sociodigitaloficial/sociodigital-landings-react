@@ -1,0 +1,58 @@
+@use '@styles/global';
+
+$presentation-section-padding-mobile: 48px 12px;
+$presentation-section-padding-desktop: 72px 18px;
+$presentation-background-color: #232830;
+$presentation-overlay: rgb(0,0,0,0.7);
+$presentation-title-size-mobile: 34px;
+$presentation-title-size-desktop: 42px;
+$presentation-title-strong: #dab800;
+
+
+.presentation-background {
+    background-attachment: fixed;
+    background-color: $presentation-background-color;
+    background-position: center;
+    background-size: cover;
+}
+.presentation-overlay {
+    background-color: $presentation-overlay;
+}
+.presentation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $presentation-section-padding-mobile;
+    text-align: center;
+}
+.presentation-title {
+    color: white;
+    font-size: $presentation-title-size-mobile;
+    margin: 0;
+}
+.presentation-title-strong {
+    color: $presentation-title-strong;
+}
+.presentation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+
+    .presentation-section {
+        padding: $presentation-section-padding-desktop;
+    }
+    .presentation-title {
+        font-size: $presentation-title-size-desktop;
+        margin-bottom: 72px;
+    }
+    .presentation-container {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 960px;
+    }
+
+}

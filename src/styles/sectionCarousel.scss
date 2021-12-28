@@ -1,0 +1,35 @@
+@use '@styles/global';
+
+$section-padding-mobile: 48px 12px;
+$section-padding-desktop: 72px 18px;
+$section-title-size-mobile: 28px;
+$section-title-size-desktop: 36px;
+$section-title-strong: #dab800;
+
+.section {
+    padding: $section-padding-mobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section-title {
+    font-size: $section-title-size-mobile;
+    margin: 0px 0px 48px 0px;
+}
+
+.section-title-strong {
+    color: $section-title-strong;
+}
+
+@media (min-width: 700px) {
+
+	.section {
+        padding: $section-padding-desktop;
+    }
+    .section-title {
+        font-size: $section-title-size-desktop;
+        margin-bottom: 72px;
+    }
+
+}

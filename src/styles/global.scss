@@ -1,0 +1,75 @@
+$blanco: #fff;
+$dorado: #dab800;
+$dorado-oscuro: #817900;
+$boton-text-size: 24px;
+$presentation-background-mobile: url(@images/presentation-mobile.jpg);
+$presentation-background-desktop: url(@images/presentation.jpg);
+$callToAction1-background-mobile: url(@images/call1-mobile.jpg);
+$callToAction1-background-desktop: url(@images/call1.jpg);
+$callToAction2-background-mobile: url(@images/call2-mobile.jpg);
+$callToAction2-background-desktop: url(@images/call2.jpg);
+$callToActionEnd-background-mobile: url(@images/call3-mobile.jpg);
+$callToActionEnd-background-desktop: url(@images/call3.jpg);
+$process-item-width: 250px;
+$process-item-image: 250px;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.button {
+    background-color: $dorado;
+    border: none;
+    color: $blanco;
+    font-size: $boton-text-size;
+    font-weight: bold;
+    height: 64px;
+    width: 248px;
+}
+.button:hover {
+    background-color: $dorado-oscuro;
+    cursor: pointer;
+}
+
+//----------------------------------------------------------- Custom CSS
+
+#presentation {
+    background-image: $presentation-background-mobile;
+}
+
+#callToAction1 {
+    background-image: $callToAction1-background-mobile;
+}
+
+#callToAction2 {
+    background-image: $callToAction2-background-mobile;
+}
+
+#callToActionEnd {
+    background-image: $callToActionEnd-background-mobile;
+}
+
+#process .item-image {
+    height: auto;
+    width: $process-item-image;
+}
+
+@media (min-width: 700px) {
+
+    #presentation {
+        background-image: $presentation-background-desktop;
+    }
+	#callToAction1 {
+        background-image: $callToAction1-background-desktop;
+    }
+    #callToAction2 {
+        background-image: $callToAction2-background-desktop;
+    }
+    #callToActionEnd {
+        background-image: $callToActionEnd-background-desktop;
+    }
+    #process .item {
+        width: $process-item-width;
+    }
+
+}

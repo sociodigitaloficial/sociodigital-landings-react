@@ -1,0 +1,62 @@
+@use '@styles/global';
+
+$section-padding-mobile: 48px 12px;
+$section-padding-desktop: 72px 18px;
+$section-title-size-mobile: 28px;
+$section-title-size-desktop: 36px;
+$section-title-strong: #dab800;
+$rojo: #910000;
+$video-alert: 26px;
+$video-disclaimers: 16px;
+$video-message: 20px;
+$verde-oscuro: #00911f;
+
+.section {
+    padding: $section-padding-mobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section-title {
+    font-size: $section-title-size-mobile;
+    margin: 0px 0px 48px 0px;
+}
+.section-title-strong {
+    color: $section-title-strong;
+}
+.video-video {
+    height: auto;
+    max-height: 393.75px;
+    max-width: 700px;
+    width: 100%;  
+}
+.video-alert {
+    color: $rojo;
+    font-size: $video-alert;
+    font-weight: 500;
+}
+.video-disclaimers {
+    font-size: $video-disclaimers;
+}
+.video-message {
+    color: $verde-oscuro;
+    font-size: $video-message;
+    font-weight: 500;
+}
+
+@media (min-width: 700px) {
+	.section {
+        padding: $section-padding-desktop;
+    }
+    .section-title {
+        font-size: $section-title-size-desktop;
+        margin-bottom: 72px;
+    }
+    .video-container {
+        max-width: 960px;
+    }
+    .video-video {
+        margin-bottom: 46px;
+    }
+}

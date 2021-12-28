@@ -1,0 +1,54 @@
+@use '@styles/global';
+
+$callToAction-background-color: #232830;
+$callToAction-overlay: rgb(0,0,0,0.7);
+$callToAction-section-padding-mobile: 48px 12px;
+$callToAction-section-padding-desktop: 72px 18px;
+$blanco: #fff;
+$callToAction-title-size-mobile: 28px;
+$callToAction-title-size-desktop: 36px;
+
+.callToAction-background {
+    background-attachment: fixed;
+    background-color: $callToAction-background-color;
+    background-position: center;
+    background-size: cover;
+}
+.callToAction-overlay {
+    background-color: $callToAction-overlay;
+}
+.callToAction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $callToAction-section-padding-mobile;
+}
+.callToAction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.callToAction-title {
+    color: $blanco;
+    font-size: $callToAction-title-size-mobile;
+    font-weight: normal;
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    .callToAction-section {
+        padding: $callToAction-section-padding-desktop;
+    }
+    .callToAction-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 960px;
+    }
+    .callToAction-title {
+        font-size: $callToAction-title-size-desktop;
+        margin: 0px 5% 0px 0px;
+    }
+}

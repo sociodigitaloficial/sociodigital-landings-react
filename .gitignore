@@ -1,0 +1,8 @@
+# Ignore node moduls
+node_modules
+
+# Ignore dist
+dist
+
+# Ignore assets
+src/assets

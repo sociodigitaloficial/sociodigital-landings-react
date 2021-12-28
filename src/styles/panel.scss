@@ -1,0 +1,59 @@
+@use '@styles/global';
+
+$panel-container-background-color: white;
+$panel-data-question-size-mobile: 34px;
+$panel-data-question-size-desktop: 38px;
+$panel-data-response-color-mobile: #00911f;
+$panel-data-response-color-desktop: #52ff7e;
+$panel-data-response-size-mobile: 30px;
+$panel-data-response-size-desktop: 34px;
+$panel-data-mesagge-size-mobile: 12px;
+$panel-data-mesagge-size-desktop: 16px;
+$panel-container-text-color-desktop: white;
+
+.panel-container {
+    background-color: $panel-container-background-color;
+    box-sizing: border-box;
+    margin: 48px;
+    padding: 32px 12px;
+    width: 280px;
+}
+.panel-data:nth-child(2){
+    margin: 36px 0px;
+}
+.panel-data-question {
+    font-size: $panel-data-question-size-mobile;
+    font-weight: bold;
+    margin: 0px 0px 12px;
+}
+.panel-data-response {
+    color: $panel-data-response-color-mobile;
+    font-size: $panel-data-response-size-mobile;
+    margin: 0px 0px 8px;
+}
+.panel-data-message {
+    font-size: $panel-data-mesagge-size-mobile;
+}
+
+@media (min-width: 700px) {
+
+	.panel-container {
+        background-color: unset;
+        color: $panel-container-text-color-desktop;
+        margin: 0;
+        padding: 0px 12px;
+        text-align: left;
+        width: 50%;
+    }
+    .panel-data-question {
+        font-size: $panel-data-question-size-desktop;
+    }
+    .panel-data-response {
+        color: $panel-data-response-color-desktop;
+        font-size: $panel-data-response-size-desktop;
+    }
+    .panel-data-message {
+        font-size: $panel-data-mesagge-size-desktop;
+    }
+    
+}

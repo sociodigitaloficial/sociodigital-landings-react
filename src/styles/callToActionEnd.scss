@@ -1,0 +1,62 @@
+@use '@styles/global';
+
+$callToActionEnd-background-color: #232830;
+$callToActionEnd-overlay: rgb(0,0,0,0.7);
+$callToActionEnd-section-padding-mobile: 48px 12px;
+$callToActionEnd-section-padding-desktop: 72px 18px;
+$blanco: #fff;
+$callToActionEnd-title-size-mobile: 34px;
+$callToActionEnd-title-size-desktop: 42px;
+$callToActionEnd-paragraph-size-mobile: 16px;
+
+.callToActionEnd-background {
+    background-attachment: fixed;
+    background-color: $callToActionEnd-background-color;
+    background-position: center;
+    background-size: cover;
+}
+.callToActionEnd-overlay {
+    background-color: $callToActionEnd-overlay;
+}
+.callToActionEnd-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $callToActionEnd-section-padding-mobile;
+}
+.callToActionEnd-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.callToActionEnd-title {
+    color: $blanco;
+    font-size: $callToActionEnd-title-size-mobile;
+    font-weight: normal;
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+}
+
+.callToActionEnd-paragraph {
+    color: $blanco;
+    font-size: $callToActionEnd-paragraph-size-mobile;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.callToActionEnd-button {
+    margin: 80px 0px;
+}
+
+@media (min-width: 700px) {
+    .callToActionEnd-section {
+        padding: $callToActionEnd-section-padding-desktop;
+    }
+    .callToActionEnd-container {
+        max-width: 700px;
+    }
+    .callToActionEnd-title {
+        font-size: $callToActionEnd-title-size-desktop;
+    }
+}
