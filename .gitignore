@@ -6,3 +6,6 @@ dist
 
 # Ignore assets
 src/assets
+
+# Enviroment
+.env
