@@ -11,9 +11,10 @@ const App = () => {
         <AppContext.Provider value={initialState}>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Publicidad />} />
-                    <Route path="/publicidad" element={<Publicidad />} />
-                    <Route path="/instagram" element={<Instagram />} />
+                    <Route path="/" element={<Publicidad />}>
+                        <Route path="/publicidad" element={<Publicidad />} />
+                        <Route path="/instagram" element={<Instagram />} />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </AppContext.Provider>
